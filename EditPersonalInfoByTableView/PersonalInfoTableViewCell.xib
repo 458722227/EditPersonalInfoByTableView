@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="86" id="KGk-i7-Jjw" customClass="PersonalInfoTableViewCell" customModule="EditPersonalInfoByTableView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="374" height="86"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="374" height="85.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="身份证号码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e6d-aE-Qj6">
+                        <rect key="frame" x="15" y="33" width="80" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="UVk-Ye-hh3"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="UgU-yQ-Y6d">
+                        <rect key="frame" x="110" y="32.5" width="229" height="19"/>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="右侧箭头.png" translatesAutoresizingMaskIntoConstraints="NO" id="qr0-sb-etJ">
+                        <rect key="frame" x="354" y="37" width="5" height="10"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="5" id="7PZ-IW-BzO"/>
+                            <constraint firstAttribute="height" constant="10" id="TwM-7d-UD6"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vA6-Lr-JwH">
+                        <rect key="frame" x="0.0" y="85" width="374" height="0.5"/>
+                        <color key="backgroundColor" red="0.86274509799999999" green="0.86274509799999999" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="UyQ-H1-mj4"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="vA6-Lr-JwH" secondAttribute="trailing" id="6pB-Kr-hfC"/>
+                    <constraint firstItem="qr0-sb-etJ" firstAttribute="leading" secondItem="UgU-yQ-Y6d" secondAttribute="trailing" constant="15" id="A5u-cf-hsh"/>
+                    <constraint firstItem="e6d-aE-Qj6" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="EA2-MA-yFt"/>
+                    <constraint firstItem="e6d-aE-Qj6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="RV6-IG-Nal"/>
+                    <constraint firstItem="vA6-Lr-JwH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="SkK-RV-Mxf"/>
+                    <constraint firstAttribute="bottom" secondItem="vA6-Lr-JwH" secondAttribute="bottom" id="XFa-GG-Pad"/>
+                    <constraint firstItem="UgU-yQ-Y6d" firstAttribute="leading" secondItem="e6d-aE-Qj6" secondAttribute="trailing" constant="15" id="l1K-XE-k8m"/>
+                    <constraint firstAttribute="trailing" secondItem="qr0-sb-etJ" secondAttribute="trailing" constant="15" id="onq-CM-CHV"/>
+                    <constraint firstItem="qr0-sb-etJ" firstAttribute="centerY" secondItem="e6d-aE-Qj6" secondAttribute="centerY" id="sOK-dt-TWx"/>
+                    <constraint firstItem="UgU-yQ-Y6d" firstAttribute="centerY" secondItem="e6d-aE-Qj6" secondAttribute="centerY" id="z2d-Sw-ygZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="infoKeyLab" destination="e6d-aE-Qj6" id="vJU-wF-1Lk"/>
+                <outlet property="infoValueTF" destination="UgU-yQ-Y6d" id="bUw-rF-QRn"/>
+                <outlet property="rightArrowImgV" destination="qr0-sb-etJ" id="FYv-hz-lm2"/>
+            </connections>
+            <point key="canvasLocation" x="61" y="75"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="右侧箭头.png" width="6" height="12"/>
+    </resources>
+</document>
